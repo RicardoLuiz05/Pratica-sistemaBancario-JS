@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Bancário</title>
+</head>
+<body>
+    <h1>Sistema Bancário</h1>
+    <form style="display: flex; flex-direction: column; align-items: flex-start;">
+        Numero: <input id="numero"> <br>
+        Saldo: <input id="saldo"> <br>
+        Aniversário: <input id="dataAniversario"> <br>
+
+        <div style="display: flex; flex-direction: column;">
+        <button onclick="contaController.inserir(event)">Inserir</button> <br>
+        
+        <label for="contas">Tipo da polpança: </label>
+        <select name="cars" id="contas">
+            <option value="conta">Conta</option>
+            <option value="conta-bonificada">Conta bonificada</option>
+            <option value="Polpanca">Polpança</option>
+        </select>
+        </div>
+    </form>
+
+    <script src="js/modelo/conta.js"></script>
+    <script src="js/modelo/conta-bonificada.js"></script>
+    <script src="js/modelo/repositorio-contas.js"></script>
+    <script src="js/controlador/conta-controller.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
